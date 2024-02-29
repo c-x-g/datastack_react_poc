@@ -12,6 +12,9 @@ The only difference is that I have removed the API call and replaced it with sta
    Run these commands:
 
 ```
+# from your working directory
+git clone git@github.com:c-x-g/datastack_react_poc.git
+cd datastack_react_poc
 yarn install
 yarn dev
 ```
