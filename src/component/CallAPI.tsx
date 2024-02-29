@@ -18,11 +18,15 @@ type ContainerMetadata = {
 
 let containerMetadata: ContainerMetadata | undefined = undefined;
 
-async function createContainerMetadata() {
-  const response = await fetch("/container", {
-    method: "POST",
-  });
-  containerMetadata = await response.json();
+function createContainerMetadata() {
+  // NOTE: this is just static data
+  containerMetadata = {
+    pod: "api-component-86d4cd67d7-q6fdt",
+    node: "desktop",
+    namespace: "default",
+    ip_addr: "10.42.0.4",
+    svc_account: "default",
+  };
 }
 
 function CallAPI() {
@@ -33,7 +37,7 @@ function CallAPI() {
     <div>
       <button
         onClick={async () => {
-          await createContainerMetadata();
+          createContainerMetadata();
           setLoadData(true);
         }}
       >

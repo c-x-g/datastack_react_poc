@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Instructions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is intended to be learning material for React
 
-Currently, two official plugins are available:
+[The code is taken from the react-ui-component folder of the datastack_kubernetes_poc repository](https://github.com/c-x-g/datastack_kubernetes_poc/tree/master/react-ui-component)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The only difference is that I have removed the API call and replaced it with static data so that the focus is on showing the React functionality
 
-## Expanding the ESLint configuration
+# Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Assuming completed setup of npm and yarn, (I can include those steps if necessary)
+Run these commands:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+```
+yarn install
+yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+If there are no errors, the default port is 5173, you should see something like this
+![alt text](run_yarn_dev_locally.png)
+
+Go to your browser to the corresponding address shown in the terminal, a page should render showing a navigation bar on the top right and a button in the middle
+
+![alt text](initial_page.png)
+
+Click the **Call API Pod** button and go to the **Access Table** page by clicking the Nav link on the top right and you should see the pages behave as shown below
+
+**Call API**
+![alt text](call_api.png)
+
+**Call Table**
+![alt text](call_table.png)
