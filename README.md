@@ -26,9 +26,9 @@ If there are no errors, the default port is 5173, you should see something like 
 3. Click the **Call API Pod** button and go to the **Access Table** page by clicking the Nav link on the top right and you should see the pages behave as shown below
 
 **Call API**
+<br/>
 ![alt text](call_api.png)
 
-<br/>
-
 **Call Table**
+<br/>
 ![alt text](call_table.png)
