@@ -27,12 +27,12 @@ const StyledHeader = styled.h1`
   margin: 0;
 `;
 
-const NavLinkStyle = {
-  "text-decoration": "none",
+const NavLinkStyle: React.CSSProperties = {
+  textDecoration: "none",
   color: "white",
-  "font-family": "sans-serif",
-  "font-weight": "normal",
-  "font-size": "85%",
+  fontFamily: "sans-serif",
+  fontWeight: "normal",
+  fontSize: "85%",
   position: "relative", // this appears to be a default property, deleting it here won't change the layout
 };
 
