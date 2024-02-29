@@ -8,8 +8,8 @@ The only difference is that I have removed the API call and replaced it with sta
 
 # Setup
 
-Assuming completed setup of npm and yarn, (I can include those steps if necessary)
-Run these commands:
+1. Assuming completed setup of npm and yarn, (I can include those steps if necessary)
+   Run these commands:
 
 ```
 yarn install
@@ -19,14 +19,16 @@ yarn dev
 If there are no errors, the default port is 5173, you should see something like this
 ![alt text](run_yarn_dev_locally.png)
 
-Go to your browser to the corresponding address shown in the terminal, a page should render showing a navigation bar on the top right and a button in the middle
+2. Go to your browser to the corresponding address shown in the terminal, a page should render showing a navigation bar on the top right and a button in the middle
 
 ![alt text](initial_page.png)
 
-Click the **Call API Pod** button and go to the **Access Table** page by clicking the Nav link on the top right and you should see the pages behave as shown below
+3. Click the **Call API Pod** button and go to the **Access Table** page by clicking the Nav link on the top right and you should see the pages behave as shown below
 
 **Call API**
 ![alt text](call_api.png)
+
+<br/>
 
 **Call Table**
 ![alt text](call_table.png)
